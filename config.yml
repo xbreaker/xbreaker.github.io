@@ -1,6 +1,6 @@
 baseURL: http://aybe.org/
 title: Ayrat Belyaev
-theme: papermod
+theme: PaperMod
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
