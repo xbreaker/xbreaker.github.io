@@ -1,0 +1,77 @@
+baseURL: http://aybe.org/
+title: Ayrat Belyaev
+theme: papermod
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+
+defaultContentLanguage: en
+en:
+    languageName: 🇬🇧
+    contentDir: content/en
+
+permalinks:
+  posts: /:year/:month/:slug/
+
+minify:
+  disableJSON: true
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  author: Ayrat Belyaev
+  description: Personal space
+  keywords:
+    - blog
+    - ayrat
+    - belyaev
+    - progamming
+
+  defaultTheme: auto
+
+  homeInfoParams:
+    Title: Hello! 👋
+    Content: >
+      Welcome to my home page
+  socialIcons:
+    - name: email
+      url: mailto:me@aybe.org
+    - name: github
+      url: https://github.com/xbreaker
+    - name: twitter
+      url: https://twitter.com/xbreaker
+    - name: instagram
+      url: https://instagram.com/xb_r
+    - name: telegram
+      url: https://t.me/xbreaker
+    - name: linkedin
+      url: https://www.linkedin.com/in/xbreaker
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  disableCodeCopy: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  displayFullLangName: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: /favicon.ico
+    favicon16x16: /favicon.ico
+    # favicon32x32: "<link / abs url>"
+    apple_touch_icon: /favicon.ico
+    # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: Ayrat Belyaev
+    icon: /img/avatar-35.jpg
+    iconHeight: 35
