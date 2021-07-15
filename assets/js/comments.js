@@ -41,7 +41,7 @@ form.addEventListener("submit", submitEvent => {
     const xhr = new XMLHttpRequest();
 
     const json = {}
-    formdata.forEach(function(value, prop){
+    fd.forEach(function(value, prop){
       json[prop] = value
     })
 
