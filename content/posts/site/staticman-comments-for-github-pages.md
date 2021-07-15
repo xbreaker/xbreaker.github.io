@@ -174,7 +174,7 @@ Hello from Staticman version 3.0.0!
 params:
 	comments: true
   	staticman:
-    	api: https://app-name.herokuapp.com/v2/entry/xbreaker/xbreaker.github.io/master/comments
+    	api: https://app-name.herokuapp.com/v2/entry/xbreaker/xbreaker.github.io/main/comments
     	recaptcha:
     		enabled: false
     		sitekey: 'recaptcha-sitekey'
@@ -183,7 +183,9 @@ params:
 
 Ссылка на API должна быть вида:
 
-`https://app-name.herokuapp.com/v2/entry/<ваш github user>/<ваш github репозиторий>/master/comments`
+`https://app-name.herokuapp.com/v2/entry/<ваш github user>/<ваш github репозиторий>/main/comments`
+
+Обратите внимание на бранч вашего репозитория, для старых репозиториев это **master**, для новых - **main**.
 
 ### Шаблон комментариев
 
@@ -239,3 +241,9 @@ params:
 Вносим настройки в `config.yml` и `staticman.yml`. Вот и все, готово 👍! Можно приступать к тестированию комментариев.
 
 {{< figure src="/img/posts/staticman_11.png" caption="reCAPTCHA" >}}
+
+### Итого
+
+В этом посте можно посмотреть результате реализации таких комментариев, создаваемые PR после отправки комментария можно найти в [репозитории](https://github.com/xbreaker/xbreaker.github.io/pulls).
+
+>Если у вас есть добавить или поправить в этой статье - можно вносить правки [напрямую](https://github.com/xbreaker/xbreaker.github.io/blob/main/content/posts/site/staticman-comments-for-github-pages.md).
