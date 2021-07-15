@@ -1,4 +1,4 @@
-baseURL: http://aybe.org/
+baseURL: https://aybe.org/
 title: Ayrat Belyaev
 theme: PaperMod
 enableEmoji: true
@@ -118,3 +118,9 @@ params:
     text: Ayrat Belyaev
     icon: /img/avatar-35.jpg
     iconHeight: 35
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
