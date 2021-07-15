@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://aybe.org/sitemap.xml
+Sitemap: https://aybe.org/sitemap.xml
