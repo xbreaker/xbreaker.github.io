@@ -40,6 +40,15 @@ form.addEventListener("submit", submitEvent => {
     const fd = new FormData(form);  
     const xhr = new XMLHttpRequest();
 
+    const json = {}
+    formdata.forEach(function(value, prop){
+      json[prop] = value
+    })
+
+    // convert json to urlencoded query string
+    // SOURCE: https://stackoverflow.com/a/37562814 (comments)
+    const formBody = Object.keys(json).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(json[key])).join('&')
+
     submitEvent.submitter.setAttribute("disabled", "disabled");
     form.classList.toggle("loading");
     notice.innerHTML = "Комментарий отправляется";
@@ -60,5 +69,7 @@ form.addEventListener("submit", submitEvent => {
         submitEvent.submitter.removeAttribute("disabled");
     });
     xhr.open("POST", form.action);
-    xhr.send(fd);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.send(formBody);
 });
