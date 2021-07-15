@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Ayrat Belyaev</title>
-    <link>http://aybe.org/</link>
-    <description>Recent content on Ayrat Belyaev</description>
+    <title>howto on Ayrat Belyaev</title>
+    <link>http://aybe.org/tags/howto/</link>
+    <description>Recent content in howto on Ayrat Belyaev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Jul 2021 10:17:01 +0300</lastBuildDate><atom:link href="http://aybe.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jul 2021 10:17:01 +0300</lastBuildDate><atom:link href="http://aybe.org/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Добавление Staticman комментариев на статичные сайты (github-pages)</title>
       <link>http://aybe.org/2021/07/staticman-comments-for-github-pages/</link>
@@ -15,8 +15,6 @@
       <description>Данный сайт использует распространенный вариант хостинга с использование Github - при каждом изменении с помощью github-actions генерируется статичный сайт со всеми страницами. Из-за этого нет возможности использовать динамический контент напрямую, например, комментарии к статьям. Есть возможность использовать Disqus, но в таком случае появляется зависимость от сторонних сервисов.
 Лучшим вариантом я считаю хранить комментарии у себя в репозитории, которые будут появлятся на сайте в момент генерации сайта. Сервисов для реализации такого функционала очень много - как бесплатных, так и платных.</description>
     </item>
-    
-    
     
   </channel>
 </rss>
