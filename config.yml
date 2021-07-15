@@ -4,6 +4,7 @@ theme: PaperMod
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
+googleAnalytics: G-MFD8PM59LW
 
 defaultContentLanguage: ru
 languages:
