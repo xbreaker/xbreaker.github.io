@@ -2,13 +2,16 @@
 	box-sizing: border-box;
     max-width: 100%;
     margin: auto;
-    background-color: #fff;
     border: 1px solid transparent; /* Removes margin collapse */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.4;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.85);
     padding-top: 30px;
+}
+
+body.dark .comment-thread {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .comment-thread button {
@@ -18,9 +21,12 @@
     font-size: 14px;
     padding: 0px 8px;
     color: rgba(0, 0, 0, 0.85);
-    background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+}
+
+body.dark .comment-thread button {
+    background-color: #9d9d9d;
 }
 .comment-thread button:hover,
 .comment-thread button:focus,
@@ -29,6 +35,11 @@
     background-color: #ecf0f1;
 }
 
+body.dark .comment-thread button:hover,
+body.dark .comment-thread button:focus,
+body.dark .comment-thread button:active {
+    background-color: #838383;
+}
 .m-0 {
     margin: 0;
 }
@@ -66,10 +77,16 @@
     color: rgba(0, 0, 0, 0.5);
     margin-left: 10px;
 }
+body.dark .comment-info {
+    color: rgba(255, 255, 255, 0.5);
+}
 .comment-author {
     color: rgba(0, 0, 0, 0.85);
     font-weight: bold;
     text-decoration: none;
+}
+body.dark .comment-author {
+    color: rgba(255, 255, 255, 0.85);
 }
 .comment-author:hover {
     text-decoration: underline;
@@ -94,6 +111,10 @@
     border-right: 4px solid transparent;
     background-color: rgba(0, 0, 0, 0.1);
     background-clip: padding-box;
+}
+
+body.dark .comment-border-link {    
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .comment-border-link:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -179,6 +200,10 @@ details.comment:not([open]) .comment-heading::after {
     border: 1px solid rgb(188, 188, 188);
     border-radius: 3px;
     padding: 4px;
+}
+body.dark .reply-form input, 
+body.dark .reply-form textarea {
+    color: white;
 }
 .reply-form textarea {
     width: 100%;
