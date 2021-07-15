@@ -1,0 +1,115 @@
+<section id="comment-thread" class="js-comments comment-thread">
+
+  {{ if $.Site.Data.comments }}
+    {{ $comments := index $.Site.Data.comments .Slug }}
+    {{ if $comments }}
+      {{ $c := len $comments }}
+      {{ if (and (eq (mod $c 10) 1) (ne (mod $c 100) 11)) }}
+        <h3>{{ $c }} комментарий</h3>
+      {{ else }}
+        {{ if (and (ge (mod $c 10) 2) (le (mod $c 10) 4) (or (lt (mod $c 100) 10) (ge (mod $c 100) 20))) }}
+          <h3>{{ $c }} комментария</h3> 
+        {{ else }}
+          <h3>{{ $c }} комментариев</h3> 
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      <h3>Нет комментариев</h3>
+    {{ end }}
+
+    {{ $.Scratch.Set "hasComments" 0 }}
+    {{ range $comments }}
+      {{ if not .thread }}
+        {{ $.Scratch.Add "hasComments" 1 }}
+        {{ $.Scratch.Set "hasReplies" 0 }}
+        {{ $.Scratch.Set "thread" ._id }}
+        {{ $.Scratch.SetInMap "replyIndices" ._id 0 }}
+        <details open class="comment" id="comment-{{ $.Scratch.Get "hasComments" }}" data-thread="{{._id}}" data-id="{{._id}}" data-name="{{ .name }}">
+          <a href="#comment-{{ $.Scratch.Get "hasComments" }}" class="comment-border-link">
+            <span class="sr-only">Перейти к первому комментарию</span>
+          </a>
+          <summary>
+            <div class="comment-heading">
+              <div class="comment-avatar">
+                  <img src="https://www.gravatar.com/avatar/{{ .email }}?s=48&d=identicon" alt="{{ .name }}'s gravatar">
+              </div>
+              <div class="comment-info">
+                  <span class="comment-author">{{ .name }}</span>
+                  <p class="m-0">
+                    {{ if eq .email $.Site.Params.emailhash }}<span class="comment-owner">автор • </span>{{ end }}<time datetime="{{ .date }}">{{ dateFormat (default "2 Jan 2006 15:04:05" .Site.Params.dateformat) .date }}</time>
+                  </p>
+              </div>
+            </div>
+          </summary>
+
+          <div class="comment-body">
+            <p>{{ .message | markdownify }}</p>
+            <button data-toggle="reply-form">Ответить</button>
+          </div>  
+
+          <div class="replies">
+          {{ range $comments }}
+            {{ if eq .thread ($.Scratch.Get "thread") }}
+              {{ $.Scratch.Add "hasReplies" 1 }}
+              {{ $.Scratch.SetInMap "replyIndices" ._id ($.Scratch.Get "hasReplies") }}
+              <details open class="comment" id="comment-{{ $.Scratch.Get "hasComments" }}r{{ $.Scratch.Get "hasReplies" }}" data-thread="{{.thread}}" data-id="{{._id}}"  data-name="{{ .name }}">
+                <a href="#comment-{{ $.Scratch.Get "hasComments" }}r{{ $.Scratch.Get "hasReplies" }}" class="comment-border-link">
+                  <span class="sr-only">Перейти к первому комментарию</span>
+                </a>
+                {{- $replyTargetIndex := (index ($.Scratch.Get "replyIndices") .parent) -}}
+                {{- $replyLinkEnd := cond (eq $replyTargetIndex 0) "" (print "r" $replyTargetIndex) -}}
+                <summary>
+                  <div class="comment-heading">
+                    <div class="comment-avatar">
+                        <img src="https://www.gravatar.com/avatar/{{ .email }}?s=48&d=identicon" alt="{{ .name }}'s gravatar">
+                    </div>
+                    <div class="comment-info">
+                        <span class="comment-author">{{ .name }}</span> ответил <a class="comment-author" href='#comment-{{ $.Scratch.Get "hasComments" }}{{ $replyLinkEnd }}' class='comment-reply-target' title='{{ .parent }}'> {{ .parentName }}</a>
+                        <p class="m-0">
+                            {{ if eq .email $.Site.Params.emailhash }}<span class="comment-owner">автор</span> • {{ end }}<time datetime="{{ .date }}">{{ dateFormat (default "2 Jan 2006 15:04:05" .Site.Params.dateformat) .date }}</time>
+                        </p>
+                    </div>
+                  </div>
+                </summary>
+                <div class="comment-body">
+                  <p>{{ .message | markdownify }}</p>
+                  <button data-toggle="reply-form">Ответить</button>
+                </div>  
+              </details>
+            {{ end }}
+          {{ end }}
+          </div>
+
+        </details>
+        {{ $.Scratch.Delete "replyIndices" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <form id="reply-form" class="js-form reply-form" method="post" action="{{ .Site.Params.staticman.api }}">
+    <h3 id="reply-form-head">Добавить комментарий</h3>
+    <div id="notice" class="notice"></div>
+    <input type="hidden" name="options[slug]" value="{{ .Slug }}">
+    <input type="hidden" name="options[parent]" value="{{ .Permalink }}">
+
+    <input id="input-thread" type="hidden" name="fields[thread]" value="">
+    <input id="input-parent" type="hidden" name="fields[parent]" value="">
+    <input id="input-parentName" type="hidden" name="fields[parentName]" value="">
+
+    {{ if .Site.Params.staticman.recaptcha.enabled }}
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ .Site.Params.staticman.recaptcha.sitekey }}">
+    <input type="hidden" name="options[reCaptcha][secret]"  value="{{ .Site.Params.staticman.recaptcha.secret }}">
+    {{ end }}
+
+    <textarea name="fields[message]" placeholder="Вы можете использовать синтаксис Markdown" rows="6" required></textarea>
+    <input name="fields[name]" type="text" placeholder="имя" required/>
+    <input type="email" name="fields[email]"  placeholder="email" required/>
+
+    {{ if .Site.Params.staticman.recaptcha.enabled }}
+    <div class="g-recaptcha" data-sitekey="{{ .Site.Params.staticman.recaptcha.sitekey }}"></div>
+    {{ end }}
+
+    <button id="submit">Отправить</button>
+    <button id="cancel-button" class="d-none" data-toggle="reply-form-cancel">Отменить</button>
+  </form>
+</section>

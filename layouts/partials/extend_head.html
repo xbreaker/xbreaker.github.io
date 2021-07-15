@@ -1,0 +1,13 @@
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search")) }}
+{{- if not .Site.Params.assets.disableFingerprinting }}
+{{- $comments := slice (resources.Get "js/comments.js") | resources.Concat "assets/js/comments.js" | minify | fingerprint }}
+<script defer crossorigin="anonymous" src="{{ $comments.RelPermalink }}" integrity="{{ $comments.Data.Integrity }}"></script>
+{{- else }}
+{{- $comments := slice (resources.Get "js/comments.js") | resources.Concat "assets/js/comments.js" | minify }}
+<script defer crossorigin="anonymous" src="{{ $comments.RelPermalink }}"></script>
+{{- end }}
+{{- end }}
+
+{{- if .Site.Params.staticman.recaptcha.enabled -}}
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+{{- end -}}

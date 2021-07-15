@@ -14,3 +14,7 @@ comments:
       type          : "date"
       options:
         format      : "timestamp-seconds"
+  reCaptcha:
+    enabled         : false
+    siteKey         : "6LfuipkbAAAAAFmcmiZa7HYmEk40r0JJ-ua665vQ"
+    secret          : "w0e8kjpH56nyKZkvYX0Oe4kOTSOxu3c1rr2Cw4L67iB0Gx1MTBSemXn0pY+05X3Lezu/FEORlYMB15Mr9lZHSDhdpkee2l3dw3SMD7BAkJpAErtXqyC5PsSinCsZf0989VObxa/74QAp+NyF7Zr4lbY+equDeBPN9p/TqwSv0jn5Wdj2xJOoCfdThiAEeN+6DRXIqnnIMWZ6PPVkiYuBQb8zYvywNgaJ18ctucTKlnOI3SsVR8G4R86jtkvn/+cl9u+2Tu61yS1HPwz78/Aips9OdRFcLdsConD6QqbJV4R0lKFArqjD7smPKal3z/WqH1P4gED54NuNSI6VQt+Tu0J25qgEmZuL+3tJp+Jr1WyGCjrHdvatxa/dTDQgV2F+XLSLd/RmC9GbT3ukEB1CI/IFvznuj4iHtBNog7v7mwht4CVUGzIsaHNSkzMdjP/Tbt8K7YptjkhyUISuamDwbauXiTUlQishzwP8l3iM0CJRh3gKQGBP9u5svoctjCgzQzjgHfqHDgnKD2oyzSl4l4/UmwetxCEkvmY9h05VinAqMKu+wg1TTpKh0xJ0LW7TGoctfoupnzM+XTUy0UGxHBNdVFDVoP9xoQcZgkfw2yWm96t3K78kRMqWbiNqw0ZuJPy6x1IFeuPLh9CLhwflfkJW1j8UbG+WHzQLgJJUIkQ="
