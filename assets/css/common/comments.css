@@ -1,5 +1,5 @@
 .comment-thread {
-	box-sizing: border-box;
+    box-sizing: border-box;
     max-width: 100%;
     margin: auto;
     border: 1px solid transparent; /* Removes margin collapse */
@@ -92,7 +92,7 @@ body.dark .comment-author {
     text-decoration: underline;
 }
 .comment-owner {
-	color: #47c02e;
+    color: #47c02e;
 }
 .replies {
     margin-left: 20px;
@@ -123,8 +123,12 @@ body.dark .comment-border-link {
     padding-left: 28px;
 }
 .comment-body p {
-	    margin-block-start: 1em;
+    margin-block-start: 1em;
     margin-block-end: 1em;
+    white-space: pre;
+}
+.comment-body a {
+    box-shadow: 0 1px;
 }
 .comment-body .reply-form button {
     padding: 0px 8px;;
@@ -171,8 +175,8 @@ details.comment:not([open]) .comment-heading::after {
     }
 }
 .reply-form.loading {
-	opacity: 0.5;
-	cursor: not-allowed;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 .reply-form .notice {
     padding: 10px 5px;
@@ -182,18 +186,18 @@ details.comment:not([open]) .comment-heading::after {
 }
 .reply-form .notice.sending {
     background-color: #fafa2e;
-	display: block;
+    display: block;
 }
 .reply-form .notice.success {
     background-color: #3bfa2e;
-	display: block;
+    display: block;
 }
 .reply-form .notice.error {
     background-color: #ff9871;
-	display: block;
+    display: block;
 }
 .reply-form input, .reply-form textarea {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -213,10 +217,10 @@ body.dark .reply-form textarea {
     padding: 4px;
 }
 .reply-form input {
-	width: 50%;
-	display: block;
+    width: 50%;
+    display: block;
 }
-.reply-form button {	
+.reply-form button {    
     margin: 15px 0 5px 0;
     padding: 5px;
 }
