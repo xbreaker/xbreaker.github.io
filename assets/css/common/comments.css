@@ -125,7 +125,7 @@ body.dark .comment-border-link {
 .comment-body p {
     margin-block-start: 1em;
     margin-block-end: 1em;
-    white-space: pre;
+    white-space: pre-line;
 }
 .comment-body a {
     box-shadow: 0 1px;
