@@ -196,7 +196,6 @@ $adapter = $hybridauth->authenticate( "yandex" );
 -   [Страница загрузки библиотеки и плагинов 2.x](https://hybridauth.github.io/hybridauth/plugins.html)
 -   [Страница проекта на GitHub](https://github.com/hybridauth/hybridauth)
 -   [Мой форк проекта на GitHub](https://github.com/xbreaker/hybridauth)
--   [Онлайн-демо авторизации](http://oyanix.com/opensource/hybridauth/)
 
 
 **upd**: выложил авторизацию для [Яндекса](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-yandex) и [Mail.ru](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-mailru), [Одноклассники](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-odnoklassniki) получились с костылем для совместимости с PHP > 5.3.0.
