@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>UDM on Ayrat Belyaev</title>
-    <link>https://aybe.org/posts/udm/</link>
-    <description>Recent content in UDM on Ayrat Belyaev</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://aybe.org/posts/udm/index.xml" rel="self" type="application/rss+xml" />
+    <title>digitalocean on Ayrat Belyaev</title>
+    <link>https://aybe.org/tags/digitalocean/</link>
+    <description>Recent content in digitalocean on Ayrat Belyaev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 20 Jun 2021 18:42:01 +0300</lastBuildDate><atom:link href="https://aybe.org/tags/digitalocean/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Использование Digital Ocean в качестве Dynamic DNS для UDM/UDM Pro</title>
       <link>https://aybe.org/2021/06/udm-dyndns-for-digitalocean/</link>
@@ -13,16 +14,6 @@
       <guid>https://aybe.org/2021/06/udm-dyndns-for-digitalocean/</guid>
       <description>Кроме основного варианта обновления Dynamic DNS, который я рассматривал ранее я решил сделать резервный вариант обновления, так как доступ к домашнему серверу достаточно критичен и используется мной постоянно. Наиболее простой вариант резервирования - это проверка и обновление настроек Dynamic DNS по расписанию.
 Для управления своими доменами использую Digital Ocean, поэтому возникла проблема динамическим управлением доменными записями при подключении к интернету, так как дома у меня динамический &amp;ldquo;белый&amp;rdquo; IP адрес. Как мы помним основной вариант обновления настроек у меня - это приложение Heroku, которое позволяет управлять доменными записями на DigitalOcean посредством URL-запросов с авторизацией, что-то вида:</description>
-    </item>
-    
-    <item>
-      <title>Использование своего Dynamic DNS сервиса на Ubiquti Unifi Dream Machine</title>
-      <link>https://aybe.org/2021/06/custom-dyndns-for-udm/</link>
-      <pubDate>Tue, 08 Jun 2021 17:46:06 +0300</pubDate>
-      
-      <guid>https://aybe.org/2021/06/custom-dyndns-for-udm/</guid>
-      <description>После перехода с FreshTomato на UnifiOS первым делом возникла необходимость переноса настроек Dynamic DNS. На UDM для настройки доступен лишь небольшой список предустановленных провайдеров dynamic dns, требующих оплату за свою работу. Такой вариант меня не устраивал поэтому было решено посмотреть как это устроено внутри и есть ли вариант использовать своего провайдера.
-Поэтому для начала разберемся каким образом это можно сделать и возможно ли вообще это сделать на Unifi Dream Machine. И позволяют ли другие провайдеры настраивать обновление dynamic DNS?</description>
     </item>
     
   </channel>
