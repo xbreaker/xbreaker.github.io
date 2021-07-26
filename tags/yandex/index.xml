@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>habr on Ayrat Belyaev</title>
-    <link>https://aybe.org/tags/habr/</link>
-    <description>Recent content in habr on Ayrat Belyaev</description>
+    <title>yandex on Ayrat Belyaev</title>
+    <link>https://aybe.org/tags/yandex/</link>
+    <description>Recent content in yandex on Ayrat Belyaev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Aug 2012 12:52:02 +0300</lastBuildDate><atom:link href="https://aybe.org/tags/habr/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Что если бы Google выпустил свой Bootstrap?</title>
-      <link>https://aybe.org/2012/08/google-plusstrap/</link>
-      <pubDate>Fri, 10 Aug 2012 12:52:02 +0300</pubDate>
-      
-      <guid>https://aybe.org/2012/08/google-plusstrap/</guid>
-      <description>Это копия моей оригинальной статьи, опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки. Сам фреймворк в итоге не получил развития и давно убран в архив.
- Поздравляю всех с пятницей и в качестве небольшого развлечения предлагаю представить, как бы выглядел популярный CSS-фреймворк Twitter Bootstrap, если бы он был от Google? Встречайте Plusstrap.
-Plusstrap Итак, потратив два дня на изучение особенностей оформления сервисов Google и, в частности, Google Plus, я решил попробовать переделать основные элементы Bootstrap и начал конечно же со строки поиска (здесь и далее Plusstrap будет расположен справа):</description>
-    </item>
-    
+    <lastBuildDate>Tue, 07 Aug 2012 14:25:04 +0300</lastBuildDate><atom:link href="https://aybe.org/tags/yandex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HybridAuth — интеграция сайта с социальными сетями&#34;</title>
       <link>https://aybe.org/2012/08/hybriauth-integration/</link>
