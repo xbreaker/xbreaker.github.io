@@ -9,8 +9,6 @@ showtoc: false
 slug: "hybriauth-integration"
 ---
 
->Это копия моей [оригинальной статьи](https://habr.com/ru/post/149187/), опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки.
-
 #### Введение
 
 На своем сайте на php для авторизации пользователей я в последнее время пользовался сервисом Loginza. Все было очень круто и удобно, но в голове начала зарождаться идея отказа от этого замечательного сервиса и вот почему:
@@ -199,3 +197,5 @@ $adapter = $hybridauth->authenticate( "yandex" );
 
 
 **upd**: выложил авторизацию для [Яндекса](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-yandex) и [Mail.ru](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-mailru), [Одноклассники](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-odnoklassniki) получились с костылем для совместимости с PHP > 5.3.0.
+
+>Это копия моей [оригинальной статьи](https://habr.com/ru/post/149187/), опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки.
