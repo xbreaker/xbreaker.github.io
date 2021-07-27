@@ -1,0 +1,33 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "meta" (slice (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat))) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+{{- end }}
+
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice .) }}
+{{- end }}
+
+{{ if $.Site.Data.comments }}
+    {{ $comments := index $.Site.Data.comments .Slug }}
+    {{ if $comments }}
+      {{ $c := len $comments }}
+      {{ if (and (eq (mod $c 10) 1) (ne (mod $c 100) 11)) }}
+        {{- $scratch.Add "meta" (printf "%d комментарий" $c) }}
+      {{ else }}
+        {{ if (and (ge (mod $c 10) 2) (le (mod $c 10) 4) (or (lt (mod $c 100) 10) (ge (mod $c 100) 20))) }}
+            {{- $scratch.Add "meta" (printf "%d комментария" $c) }}
+        {{ else }}
+            {{- $scratch.Add "meta" (printf "%d комментариев" $c) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+{{ end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" -}}
+{{- end -}}
