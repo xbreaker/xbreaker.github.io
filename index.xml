@@ -5,7 +5,16 @@
     <link>https://aybe.org/</link>
     <description>Recent content on Ayrat Belyaev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Jul 2021 10:17:01 +0300</lastBuildDate><atom:link href="https://aybe.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jul 2021 23:00:59 +0300</lastBuildDate><atom:link href="https://aybe.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Сохранение сессий вкладок в Google Chrome</title>
+      <link>https://aybe.org/2021/07/google-chrome-tab-sessions/</link>
+      <pubDate>Tue, 27 Jul 2021 23:00:59 +0300</pubDate>
+      
+      <guid>https://aybe.org/2021/07/google-chrome-tab-sessions/</guid>
+      <description>Что делать когда вкладок слишком много и хочется их сохранить на потом?</description>
+    </item>
+    
     <item>
       <title>Добавление Staticman комментариев на статичные сайты (github-pages)</title>
       <link>https://aybe.org/2021/07/staticman-comments-for-github-pages/</link>
