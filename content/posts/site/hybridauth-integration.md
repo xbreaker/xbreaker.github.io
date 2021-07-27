@@ -1,5 +1,7 @@
 ---
-title: HybridAuth — интеграция сайта с социальными сетями
+title: "HybridAuth — интеграция сайта с социальными сетями"
+description: "Использование библиотеки HybridAuth для реализации регистрации и аутентификации с помощью социальных сетей на своём сайте"
+summary: "Использование библиотеки HybridAuth для реализации регистрации и аутентификации с помощью социальных сетей на своём сайте. Пробуем создать своего провайдера на основе шаблона."
 date: 2012-08-07T14:25:04+03:00
 draft: false
 tags: ["github", "hybridauth", "social-login", "twitter", "yandex", "habr", "php", "oauth", "openid"]
@@ -8,6 +10,8 @@ cover:
 showtoc: false
 slug: "hybriauth-integration"
 ---
+
+>Это копия моей [оригинальной статьи](https://habr.com/ru/post/149187/), опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки.
 
 #### Введение
 
@@ -197,5 +201,3 @@ $adapter = $hybridauth->authenticate( "yandex" );
 
 
 **upd**: выложил авторизацию для [Яндекса](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-yandex) и [Mail.ru](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-mailru), [Одноклассники](https://github.com/xbreaker/hybridauth/tree/master/additional-providers/hybridauth-odnoklassniki) получились с костылем для совместимости с PHP > 5.3.0.
-
->Это копия моей [оригинальной статьи](https://habr.com/ru/post/149187/), опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки.

@@ -1,5 +1,7 @@
 ---
 title: "Что если бы Google выпустил свой Bootstrap?"
+description: "Превращаем популярный CSS-фреймворк Twitter Bootstrap в его брата-близнеца Google Plusstrap"
+summary: "Мой экспериментальный проект по созданию своего CSS-фреймворка на основе стилей Google --- Plusstrap."
 date: 2012-08-10T12:52:02+03:00
 draft: false
 tags: ["github", "plusstrap", "bootstrap", "google", "css", "habr"]
@@ -8,6 +10,9 @@ cover:
 showtoc: false
 slug: "google-plusstrap"
 ---
+
+>Это копия моей [оригинальной статьи](https://habr.com/ru/post/149373/), опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки.
+>Сам фреймворк в итоге не получил развития и давно убран в [архив](https://github.com/xbreaker/plusstrap).
 
 Поздравляю всех с пятницей и в качестве небольшого развлечения предлагаю представить, как бы выглядел популярный CSS-фреймворк [Twitter Bootstrap](https://getbootstrap.com/), если бы он был от Google? Встречайте [Plusstrap](https://aybe.org/plusstrap/).
 
@@ -44,6 +49,3 @@ slug: "google-plusstrap"
 Всем отличных выходных! Еще раз ссылка на [Github](https://aybe.org/plusstrap/).
 
 Новости по поводу выхода новых версий, а также пожелания можно оставить на странице [ВКонтакте](http://vk.com/plusstrap).
-
->Это копия моей [оригинальной статьи](https://habr.com/ru/post/149373/), опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки.
->Сам фреймворк в итоге не получил развития и давно убран в [архив](https://github.com/xbreaker/plusstrap).

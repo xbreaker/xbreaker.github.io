@@ -1,5 +1,7 @@
 ---
 title: "Использование Digital Ocean в качестве Dynamic DNS для UDM/UDM Pro"
+description: "Настройка Digital Ocean в качестве Dynamic DNS провайдера на Ubiquiti Unifi Dream Machine"
+summary: "Пришло время придумать резервный вариант обновления настроек Dynamic DNS в случае отказа встроенного механизма обновления на Ubiquiti Unifi Dream Machine."
 date: 2021-06-20T18:42:01+03:00
 draft: false
 tags: ["udm", "udm pro", "ubiquiti", "digitalocean", "dyndns"]

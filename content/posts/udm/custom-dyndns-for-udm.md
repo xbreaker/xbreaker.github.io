@@ -1,5 +1,7 @@
 ---
-title: "Использование своего Dynamic DNS сервиса на Ubiquti Unifi Dream Machine"
+title: "Использование своего Dynamic DNS сервиса на Ubiquiti Unifi Dream Machine"
+description: "Настройка стороннего Dynamic DNS провайдера в обход предустановленных на Ubiquiti Unifi Dream Machine"
+summary: "Ubiquiti UDM для настройки сервиса Dynamic DNS предлагает достаточно ограниченный список провайдеров и не торопится этот список расширять. Посмотрим как можно обойти это ограничение и добавить поддержку своего собственного провайдера."
 date: 2021-06-08T17:46:06+03:00
 draft: false
 tags: ["udm", "udm pro", "ubiquiti", "dyndns", "inadyn"]
