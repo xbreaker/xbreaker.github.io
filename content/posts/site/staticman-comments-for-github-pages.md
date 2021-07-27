@@ -253,4 +253,4 @@ params:
 
 В этом посте можно посмотреть результат реализации таких комментариев, создаваемые PR после отправки комментария можно найти в [репозитории](https://github.com/xbreaker/xbreaker.github.io/pulls).
 
->Если у вас есть добавить или поправить в этой статье - можно вносить правки [напрямую](https://github.com/xbreaker/xbreaker.github.io/blob/main/content/posts/site/staticman-comments-for-github-pages.md).
+>Если у вас есть что добавить или поправить в этой статье - можно вносить правки [напрямую](https://github.com/xbreaker/xbreaker.github.io/blob/main/content/posts/site/staticman-comments-for-github-pages.md).

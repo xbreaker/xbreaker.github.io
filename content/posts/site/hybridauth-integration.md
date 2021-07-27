@@ -1,5 +1,5 @@
 ---
-title: HybridAuth — интеграция сайта с социальными сетями"
+title: HybridAuth — интеграция сайта с социальными сетями
 date: 2012-08-07T14:25:04+03:00
 draft: false
 tags: ["github", "hybridauth", "social-login", "twitter", "yandex", "habr", "php", "oauth", "openid"]
