@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>php on Ayrat Belyaev</title>
-    <link>https://aybe.org/tags/php/</link>
-    <description>Recent content in php on Ayrat Belyaev</description>
+    <title>development on Ayrat Belyaev</title>
+    <link>https://aybe.org/tags/development/</link>
+    <description>Recent content in development on Ayrat Belyaev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Aug 2012 14:25:04 +0300</lastBuildDate><atom:link href="https://aybe.org/tags/php/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HybridAuth — интеграция сайта с социальными сетями</title>
-      <link>https://aybe.org/2012/08/hybriauth-integration/</link>
-      <pubDate>Tue, 07 Aug 2012 14:25:04 +0300</pubDate>
-      
-      <guid>https://aybe.org/2012/08/hybriauth-integration/</guid>
-      <description>Это копия моей оригинальной статьи, опубликованной на Хабре в 2012 году. Опубликована как есть, без изменений текста, поправлены только ссылки.
- Введение На своем сайте на php для авторизации пользователей я в последнее время пользовался сервисом Loginza. Все было очень круто и удобно, но в голове начала зарождаться идея отказа от этого замечательного сервиса и вот почему:
- Авторизация пользователей в случае закрытия Loginza или отказа от нее &amp;mdash; в этом случае мы потеряем пользователей, в привязанных профилях которых не указан email; Дополнительная информация, например, ВКонтакте умеет отдавать фото пользователя в нескольких видах, в том числе квадратный аватар.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 17 Mar 2011 11:16:04 +0300</lastBuildDate><atom:link href="https://aybe.org/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Автоматическое оповещение читателей о новостях с помощью ВКонтакте. Часть 2</title>
       <link>https://aybe.org/2011/03/vkontakte-automatic-2/</link>

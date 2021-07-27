@@ -213,5 +213,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>development</title>
+      <link>https://aybe.org/tags/development/</link>
+      <pubDate>Thu, 17 Mar 2011 11:16:04 +0300</pubDate>
+      
+      <guid>https://aybe.org/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vkontakte</title>
+      <link>https://aybe.org/tags/vkontakte/</link>
+      <pubDate>Thu, 17 Mar 2011 11:16:04 +0300</pubDate>
+      
+      <guid>https://aybe.org/tags/vkontakte/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
