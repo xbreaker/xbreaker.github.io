@@ -2,6 +2,10 @@ name: github pages
 
 on:
   push:
+    paths-ignore:
+      - '.github/**'
+      - 'LICENSE'
+      - 'README.md'
     branches:
       - main
   pull_request:
@@ -36,3 +40,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: aybe.org
+          full_commit_message: ${{ github.event.head_commit.message }}

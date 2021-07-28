@@ -1,0 +1,17 @@
+name: ping google
+
+on:
+  push:
+    paths:
+      - 'sitemap.xml'
+    branches:
+      - gh-pages
+
+jobs:
+  ping:
+    name: Ping Google
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send HTTP GET request
+        run: curl https://www.google.com/ping?sitemap=https://aybe.org/sitemap.xml
