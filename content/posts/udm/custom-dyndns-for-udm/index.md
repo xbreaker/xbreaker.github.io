@@ -6,7 +6,7 @@ date: 2021-06-08T17:46:06+03:00
 draft: false
 tags: ["udm", "udm pro", "ubiquiti", "dyndns", "inadyn"]
 cover:
-    image: /img/posts/dyndns_udm_0.png
+    image: images/dyndns_udm_0.png
 slug: "custom-dyndns-for-udm"
 ---
 
@@ -18,7 +18,7 @@ slug: "custom-dyndns-for-udm"
 
 Первым делом я решил проверить логи, для этого я выполнил настройки с левыми данными, чтобы появились ошибки:
 
-{{< figure src="/img/posts/dyndns_udm_1.png" caption="Пробные настройки" >}}
+{{< figure src="images/dyndns_udm_1.png" caption="Пробные настройки" >}}
 
 Смотрим логи:
 
@@ -87,7 +87,7 @@ console.log('Listening on port 3000...');
 
 После этого попробовал настроить UDM на запросы к моему серверу, в поле Server вписал адрес приложения Heroku: 
 
-{{< figure src="/img/posts/dyndns_udm_2.png" caption="Попытка номер 2" >}}
+{{< figure src="images/dyndns_udm_2.png" caption="Попытка номер 2" >}}
 
 После этого запустил просмотр логов приложения и к нему не было ни одного обращения. Пришлось вернуться в UDM и посмотреть логи там:
 
@@ -175,7 +175,7 @@ ddns-path = "\/nic/update?hostname=%h&myip=%i"
 
 И наш итоговый конфиг:
 
-{{< figure src="/img/posts/dyndns_udm_3.png" caption="Итоговый конфиг" >}}
+{{< figure src="images/dyndns_udm_3.png" caption="Итоговый конфиг" >}}
 
 Проверим результат в логах:
 

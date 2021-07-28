@@ -6,7 +6,7 @@ date: 2021-06-20T18:42:01+03:00
 draft: false
 tags: ["udm", "udm pro", "ubiquiti", "digitalocean", "dyndns"]
 cover:
-    image: /img/posts/udm_dyndns_for_digitalocean_0.png    
+    image: images/udm_dyndns_for_digitalocean_0.png    
 slug: "/udm-dyndns-for-digitalocean"
 ---
 
@@ -43,15 +43,15 @@ IP for home.site.com was updated to 127.0.0.1
 Для начала проверим настройки Digital Ocean и убедимся, что у нас есть возможность управлять доменными записями через API.
 Управление доменами расположено в секции Networking -> [Domains](https://cloud.digitalocean.com/networking/domains), где необходимо добавить свой домен и настроить поддомен, который мы будем использовать для Dynamic DNS, пусть для примера это будет `dyndns.aybe.org`, IP адрес пока можно ввести любой:
 
-{{< figure src="/img/posts/udm_dyndns_for_digitalocean_1.png" caption="Добавление новой записи для домена" >}}
+{{< figure src="images/udm_dyndns_for_digitalocean_1.png" caption="Добавление новой записи для домена" >}}
 
 Второй шаг - создание API токена, с помощью которого мы будем обновлять эту доменную запись. Управление токенам расположено в разделе [API](https://cloud.digitalocean.com/account/api/tokens), где нажимаем кнопку *Generate New Token* и вводим его название, чтобы было понятно для чего он, например `udm-dyndns-token`. Обязательно ставим галку напротив Write, чтобы у токена были права на запись:
 
-{{< figure src="/img/posts/udm_dyndns_for_digitalocean_2.png" caption="Создание API токена" >}}
+{{< figure src="images/udm_dyndns_for_digitalocean_2.png" caption="Создание API токена" >}}
 
 После создания не забываем скопировать его, так как в дальнейшем подсмотреть его будет нельзя, только удалить старый и создать новый:
 
-{{< figure src="/img/posts/udm_dyndns_for_digitalocean_3.png" caption="Скопируйте и сохраните значение токена" >}}
+{{< figure src="images/udm_dyndns_for_digitalocean_3.png" caption="Скопируйте и сохраните значение токена" >}}
 
 ### Настройка UDM
 

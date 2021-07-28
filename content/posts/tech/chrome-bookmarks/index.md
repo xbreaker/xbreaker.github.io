@@ -11,7 +11,7 @@ slug: "google-chrome-tab-sessions"
 
 При активном поиске или изучении какого-то вопроса постепенно Google Chrome превращается в неудобный набор иконок:
 
-{{< figure src="/img/posts/chrome_bookmarks_0.png" caption="Одни иконки" >}}
+{{< figure src="images/chrome_bookmarks_0.png" caption="Одни иконки" >}}
 
 Часть вкладок пока уже не нужна, но закрывать их не хочется, чтобы не потерять информацию с них, когда они понадобятся. Или нужно закрыть Google Chrome для обновления/выключения или чего-либо еще. Да, Chrome умеет восстанавливать закрытые вкладки из Истории после запуска, но если их сразу не восстановить и закрыть окно Chrome, то все они будут потеряны навсегда.
 
@@ -19,24 +19,24 @@ slug: "google-chrome-tab-sessions"
 
 Сначала включаем панель закладок для удобства и создаем на ней папку Sessions:
 
-{{< figure src="/img/posts/chrome_bookmarks_1.png" caption="Включаем панель закладок" >}}
+{{< figure src="images/chrome_bookmarks_1.png" caption="Включаем панель закладок" >}}
 
 Теперь у нас есть три пути сохранения всех закладок, первый --- горячими клавишами `Ctrl+Shift+D`. Лично я постоянно забываю эту комбинацию и почти не использую её. Второй путь --- из главного меню:
 
-{{< figure src="/img/posts/chrome_bookmarks_2.png" caption="Сохраняем всё всё всё" >}}
+{{< figure src="images/chrome_bookmarks_2.png" caption="Сохраняем всё всё всё" >}}
 
 Третий вариант --- клик на любом месте заголовка окна, свободного от вкладок:
 
-{{< figure src="/img/posts/chrome_bookmarks_3.png" caption="Третий путь" >}}
+{{< figure src="images/chrome_bookmarks_3.png" caption="Третий путь" >}}
 
 После этого необходимо выбрать нашу папку Session и в верхнем поле ввода дать название нашей сессии --- я называю их по текущей дате:
 
-{{< figure src="/img/posts/chrome_bookmarks_4.png" caption="Выбор места сохранения" >}}
+{{< figure src="images/chrome_bookmarks_4.png" caption="Выбор места сохранения" >}}
 
 После этого все наши вкладки окажутся в виде закладок в новой папке, любую из них можно будет позже открыть:
 
-{{< figure src="/img/posts/chrome_bookmarks_5.png" caption="Ничего не потеряется" >}}
+{{< figure src="images/chrome_bookmarks_5.png" caption="Ничего не потеряется" >}}
 
 Кроме этого всегда можно полностью восстановить сессию кликнув правой кнопкой по папке даты и открыть все вкладки разом либо в текущем окне, либо в новом.
 
-{{< figure src="/img/posts/chrome_bookmarks_6.png" caption="Восстанавливаем все сразу" >}}
+{{< figure src="images/chrome_bookmarks_6.png" caption="Восстанавливаем все сразу" >}}

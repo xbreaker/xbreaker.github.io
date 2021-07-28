@@ -6,7 +6,7 @@ date: 2012-08-10T12:52:02+03:00
 draft: false
 tags: ["github", "plusstrap", "bootstrap", "google", "css", "habr"]
 cover:
-    image: /img/posts/plusstrap_0.png
+    image: images/plusstrap_0.png
 showtoc: false
 slug: "google-plusstrap"
 ---
@@ -20,19 +20,19 @@ slug: "google-plusstrap"
 
 Итак, потратив два дня на изучение особенностей оформления сервисов Google и, в частности, Google Plus, я решил попробовать переделать основные элементы Bootstrap и начал конечно же со строки поиска (здесь и далее Plusstrap будет расположен справа):
 
-{{< figure src="/img/posts/plusstrap_1.png" caption="Строка поиска" >}}
+{{< figure src="images/plusstrap_1.png" caption="Строка поиска" >}}
 
 Затем переделал все кнопки, тут стоить заметить, что варианты кнопок Info, Warning и Inverse я не нашел у Гугла, поэтому пришлось немного фантазировать:
 
-{{< figure src="/img/posts/plusstrap_2.png" caption="Кнопки" >}}
+{{< figure src="images/plusstrap_2.png" caption="Кнопки" >}}
 
 Сразу прошу прощения, если сглаживание моего компьютера кому-нибудь сильно режет глаза :). А тем временем переделал таблицы (спасибо Google Docs), модальные окна и прогресс бары:
 
-{{< figure src="/img/posts/plusstrap_3.png" caption="Прогресс бары" >}}
+{{< figure src="images/plusstrap_3.png" caption="Прогресс бары" >}}
 
 Последним я поправил то, что касается всплывающих подсказок и прочих мелочей, вроде закругления углов блоков у тега code и оформления tab-навигации (спасибо Google Mail):
 
-{{< figure src="/img/posts/plusstrap_4.png" caption="Всплывающие подсказки" >}}
+{{< figure src="images/plusstrap_4.png" caption="Всплывающие подсказки" >}}
 
 Вот таким вышел мой пятничный эксперимент. Все желающие могут посмотреть полную версию на [Github](https://aybe.org/plusstrap/), только хочу заметить, что less-версии и возможности сбора css на лету вы не обнаружите. Однако, если идея понравится, то позже постараюсь добавить less и кастомизацию скачиваемого css.
 

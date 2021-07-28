@@ -6,7 +6,7 @@ date: 2012-08-07T14:25:04+03:00
 draft: false
 tags: ["github", "hybridauth", "social-login", "twitter", "yandex", "habr", "php", "oauth", "openid"]
 cover:
-    image: /img/posts/hybridauth_0.png
+    image: images/hybridauth_0.png
 showtoc: false
 slug: "hybriauth-integration"
 ---
@@ -28,11 +28,11 @@ HybridAuth --- библиотека с открытым исходным код
 
 В состав библиотеки включены примеры использования и набор наиболее популярных сервисов авторизации. Рассмотрим пример авторизации через Twitter, для этого возьмем последнюю стабильную версию и установим ее на локальном сервере. Все примеры находятся в каталоге `examples`, настройки сервисов в `hybridauth/config.php`, там же находится `install.php`, который поможет нам создать файл настроек автоматически, откроем его:
 
-![](/img/posts/hybridauth_1.png)
+![](images/hybridauth_1.png)
 
 Для начала нам необходимо указать Endpoint URL --- полный путь к корневому каталогу плагина, он используется некоторыми сервисами для возрата на ваш сайт. Далее идут настройки всех сервисов авторизации, а так же инструкции по получению ID и Secret:
 
-![](/img/posts/hybridauth_2.png)
+![](images/hybridauth_2.png)
 
 Для нашего примера [создадим](https://dev.twitter.com/apps) приложение в Twitter. После этого внесем их в настройки нашей библиотеки и сохраним. Теперь рассмотрим пример авторизации, создадим в корне сайта файл `test.php`:
 
@@ -101,7 +101,7 @@ class Hybrid_Providers_Yandex extends Hybrid_Provider_Model_OAuth2
 
 Пример заполнения данных
 
-![](/img/posts/hybridauth_3.png)
+![](images/hybridauth_3.png)
 
 У нас есть необходимые ключи, осталось внести их в настройки HybridAuth, открываем `hybridauth/config.php` и в конец добавляем:
 
@@ -180,11 +180,11 @@ $adapter = $hybridauth->authenticate( "yandex" );
 
 Пробуем авторизоваться:
 
-![](/img/posts/hybridauth_4.png)
+![](images/hybridauth_4.png)
 
 И в итоге получаем:
 
-![](/img/posts/hybridauth_5.png)
+![](images/hybridauth_5.png)
 
 Вот и все, авторизация через Яндекс прошла успешно. Можно заняться подключением остальных сервисов, которые нам необходимы.
 
