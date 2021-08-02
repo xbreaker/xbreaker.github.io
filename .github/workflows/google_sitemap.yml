@@ -1,11 +1,7 @@
-name: ping google
+name: Site Published
 
 on:
-  push:
-    paths:
-      - 'sitemap.xml'
-    branches:
-      - gh-pages
+  page_build:
 
 jobs:
   ping:
@@ -15,3 +11,21 @@ jobs:
     steps:
       - name: Send HTTP GET request
         run: curl https://www.google.com/ping?sitemap=https://aybe.org/sitemap.xml
+  notify:
+    name: Print changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+      - name: Show changed files
+        run: |
+          cat $GITHUB_EVENT_PATH
+          echo ""
+          echo Commit: $(jq -r ".build.commit" $GITHUB_EVENT_PATH)
+          echo "git-show output"
+          git show --pretty="" --name-only --diff-filter=A $(jq -r ".build.commit" $GITHUB_EVENT_PATH)
+          echo "git-diff-tree output"
+          git diff-tree --no-commit-id --name-only --diff-filter=A -r $(jq -r ".build.commit" $GITHUB_EVENT_PATH)
+          echo "end."
