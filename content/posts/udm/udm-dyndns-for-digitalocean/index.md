@@ -91,7 +91,7 @@ standard_init_linux.go:178: exec user process caused “exec format error”
 standard_init_linux.go:178: exec user process caused “exec format error”
 {{< /highlight >}}
 
-[Оказалось](https://stackoverflow.com/a/67755255), что контейнер собран для архитектуры, которая не подходит для UDM, так как у нас ипользуется архитектура arm64, а в контейнере amd64:
+[Оказалось](https://stackoverflow.com/a/67755255), что контейнер собран для архитектуры, которая не подходит для UDM, так как у нас используется архитектура arm64, а в контейнере amd64:
 
 {{< highlight bash >}}
 # podman inspect 5250704bc580 | grep "Architecture"
@@ -107,7 +107,7 @@ standard_init_linux.go:178: exec user process caused “exec format error”
 # chmod +x dyndns.sh
 {{< /highlight >}}
 
-После этого можно собрать контейнер под нашу платформу и сразу проверить, что image создался, а так же удалить стандартный, который нам не подходит:
+После этого можно собрать контейнер под нашу платформу и сразу проверить, что image создался, а также удалить стандартный, который нам не подходит:
 
 {{< highlight bash >}}
 # podman build -t tunix/digitalocean-dyndns --platform linux/arm64 .
