@@ -41,3 +41,15 @@ jobs:
           publish_dir: ./public
           cname: aybe.org
           full_commit_message: ${{ github.event.head_commit.message }}
+  ping:
+    name: Ping Google
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send sitemap.xml
+        if: github.event_name == 'push'
+        run: curl https://www.google.com/ping?sitemap=https://aybe.org/sitemap.xml
+
+      - name: Send sitemap.xml
+        if: github.event_name == 'push'
+        run: curl https://www.google.com/ping?sitemap=https://aybe.org/index.xml
