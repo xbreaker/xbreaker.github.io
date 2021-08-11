@@ -53,22 +53,32 @@ form.addEventListener("submit", submitEvent => {
     form.classList.toggle("loading");
     notice.innerHTML = "Комментарий отправляется";
     notice.classList.add("sending");
-    xhr.addEventListener("load", e => {
-        form.classList.toggle("loading");
-        notice.innerHTML = "Комментарий отправлен успешно";
-        notice.classList.remove("sending");
-        notice.classList.add("success");
-        submitEvent.submitter.removeAttribute("disabled");
-        form.reset();
-    });
-    xhr.addEventListener("error", e => {
-        form.classList.toggle("loading"); 
-        notice.innerHTML = "Ошибка отправки комментария";
-        notice.classList.remove("sending");
-        notice.classList.add("error");
-        submitEvent.submitter.removeAttribute("disabled");
-    });
     xhr.open("POST", form.action);
+    xhr.onreadystatechange = function (event) {
+        if (xhr.readyState == 4) {
+            if(xhr.status == 200) {
+                form.classList.toggle("loading");
+                notice.innerHTML = "Комментарий отправлен успешно";
+                notice.classList.remove("error");
+                notice.classList.remove("sending");
+                notice.classList.add("success");
+                submitEvent.submitter.removeAttribute("disabled");
+                form.reset();
+            } else {
+                let response = JSON.parse(xhr.responseText)
+                form.classList.toggle("loading"); 
+                if(response && response.errorCode === 'RECAPTCHA_INVALID_INPUT_RESPONSE') {
+                    notice.innerHTML = "Ошибка отправки комментария (reCaptcha не пройдена)";
+                } else {
+                    notice.innerHTML = "Ошибка отправки комментария";
+                }
+                notice.classList.remove("success");
+                notice.classList.remove("sending");
+                notice.classList.add("error");
+                submitEvent.submitter.removeAttribute("disabled");
+            }
+        }
+    };
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
     xhr.send(formBody);
