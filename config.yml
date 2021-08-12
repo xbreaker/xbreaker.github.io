@@ -90,6 +90,8 @@ params:
       url: https://t.me/xbreaker
     - name: linkedin
       url: https://www.linkedin.com/in/xbreaker
+    - name: rss
+      url: https://aybe.org/index.xml
 
   ShowReadingTime: true
   ShowShareButtons: false

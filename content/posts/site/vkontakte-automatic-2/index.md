@@ -116,4 +116,4 @@ to_note:            // пусто, если публикация в статус
 **UPD**: По просьбам в комментариях набросал простенький класс и пример использования.
 Брать тут: [github.com/xbreaker/vk.wallpost](https://github.com/xbreaker/vk.wallpost)
 
-[Первая часть]({{< ref "/posts/site/vkontakte-automatic-1.md" >}}
+[Первая часть]({{< ref "/posts/site/vkontakte-automatic-1.md" >}})
