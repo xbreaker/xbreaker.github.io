@@ -64,7 +64,7 @@ params:
     - progamming
 
   staticman:
-    api: https://aybeorg.herokuapp.com/v2/entry/xbreaker/xbreaker.github.io/main/comments
+    api: https://aybeorg.onrender.com/v2/entry/xbreaker/xbreaker.github.io/main/comments
     recaptcha:
       enabled: true
       siteKey: "6LfuipkbAAAAAFmcmiZa7HYmEk40r0JJ-ua665vQ"
