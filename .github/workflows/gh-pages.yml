@@ -9,6 +9,8 @@ on:
     branches:
       - main
   pull_request:
+  workflow_dispatch:
+        # manual run
 
 jobs:
   deploy:
